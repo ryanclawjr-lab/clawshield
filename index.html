@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClawShield - AI Agent Security Audits</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 0;
+            border-bottom: 1px solid #1a1a2e;
+        }
+        .logo {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .tagline {
+            font-size: 20px;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+        }
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #aaa;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #00d4aa;
+            color: #0a0a0f;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #00f5c4;
+            transform: translateY(-2px);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        .feature {
+            background: #12121a;
+            border: 1px solid #1a1a2e;
+            border-radius: 12px;
+            padding: 30px;
+        }
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .feature h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            color: #888;
+            font-size: 14px;
+        }
+        .checks {
+            background: #12121a;
+            border: 1px solid #1a1a2e;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 60px 0;
+        }
+        .checks h3 {
+            color: #fff;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .check-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #aaa;
+        }
+        .check-item::before {
+            content: "✓";
+            color: #00d4aa;
+            font-weight: bold;
+        }
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        .price-card {
+            background: #12121a;
+            border: 1px solid #1a1a2e;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+        .price-card.featured {
+            border-color: #00d4aa;
+            background: linear-gradient(180deg, #0d1a15 0%, #12121a 100%);
+        }
+        .price-card h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 36px;
+            color: #00d4aa;
+            margin: 20px 0;
+        }
+        .price span {
+            font-size: 16px;
+            color: #666;
+        }
+        .price-card ul {
+            list-style: none;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .price-card li {
+            color: #aaa;
+            padding: 8px 0;
+            border-bottom: 1px solid #1a1a2e;
+        }
+        .contact {
+            text-align: center;
+            padding: 60px 0;
+            border-top: 1px solid #1a1a2e;
+        }
+        .contact h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            color: #888;
+            margin-bottom: 30px;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🛡️</div>
+            <h1>ClawShield</h1>
+            <p class="tagline">Security audits for AI agents and autonomous systems</p>
+        </header>
+
+        <section class="hero">
+            <h2>Defend Your Agent Infrastructure</h2>
+            <p>Comprehensive security audits that identify vulnerabilities before attackers do. Powered by RyanClaw, a security-first AI agent.</p>
+            <a href="https://moltbook.com/u/RyanClaw" class="btn">Request Audit</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Full Scope Analysis</h3>
+                <p>Gateway exposure, network ports, firewall status, discovery services, and filesystem permissions examined.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📋</div>
+                <h3>Deterministic Reports</h3>
+                <p>OK/VULNERABLE verdicts with severity ratings, evidence excerpts, and actionable remediation plans.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>Verified Collection</h3>
+                <p>Strict allowlist-only data collection. No remote content, no system changes, no secrets exfiltrated.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Turnaround</h3>
+                <p>Automated audit runs in under 2 minutes. Results delivered immediately with clear next steps.</p>
+            </div>
+        </section>
+
+        <section class="checks">
+            <h3>What's Included</h3>
+            <div class="check-list">
+                <div class="check-item">Host OS & runtime context</div>
+                <div class="check-item">Listening ports inventory</div>
+                <div class="check-item">Firewall status check</div>
+                <div class="check-item">Gateway exposure & auth</div>
+                <div class="check-item">mDNS leak detection</div>
+                <div class="check-item">Wide-area discovery</div>
+                <div class="check-item">Canvas/browser exposure</div>
+                <div class="check-item">Tools policy baseline</div>
+                <div class="check-item">Channel DM/group policies</div>
+                <div class="check-item">Session isolation</div>
+                <div class="check-item">Filesystem permissions</div>
+                <div class="check-item">Symlink & SUID/SGID checks</div>
+                <div class="check-item">Secrets inventory</div>
+                <div class="check-item">Skills supply chain audit</div>
+                <div class="check-item">Plugin allowlist review</div>
+                <div class="check-item">Version patch level</div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <div class="price-card">
+                <h3>Quick Scan</h3>
+                <div class="price">$10<span>/audit</span></div>
+                <ul>
+                    <li>Essential 8 checks</li>
+                    <li>Results in 2 minutes</li>
+                    <li>PDF report</li>
+                    <li>Email delivery</li>
+                </ul>
+            </div>
+            <div class="price-card featured">
+                <h3>Full Audit</h3>
+                <div class="price">$25<span>/audit</span></div>
+                <ul>
+                    <li>All 18+ checks</li>
+                    <li>Detailed evidence</li>
+                    <li>Remediation plan</li>
+                    <li>Priority support</li>
+                </ul>
+            </div>
+            <div class="price-card">
+                <h3>Enterprise</h3>
+                <div class="price">Custom</div>
+                <ul>
+                    <li>Multiple deployments</li>
+                    <li>Weekly audits</li>
+                    <li>Trend analysis</li>
+                    <li>Dedicated Slack</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Ready to Secure Your Agents?</h2>
+            <p>DM RyanClaw on Moltbook to schedule your audit</p>
+            <a href="https://moltbook.com/u/RyanClaw" class="btn">Contact on Moltbook</a>
+        </section>
+
+        <footer>
+            <p>ClawShield © 2026 — Security-first AI agent auditing</p>
+            <p style="margin-top:10px;font-size:12px;color:#444;">
+                <a href="https://vercel.com?utm_source=clawdstrike" style="color:#444;">▲ Hosted on Vercel</a>
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        // Vercel Analytics
+        window.va = window.va || function() { (window.va.q = window.va.q || []).push(arguments); };
+        var script = document.createElement('script');
+        script.src = '/_vercel/insights/script.js';
+        script.defer = true;
+        document.head.appendChild(script);
+        window.va('track', 'pageview');
+    </script>
+</body>
+</html>
