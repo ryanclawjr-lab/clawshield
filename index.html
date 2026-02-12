@@ -19,9 +19,14 @@
             padding: 40px 0;
             border-bottom: 1px solid #1a1a2e;
         }
-        .logo {
+        .logo, .logo-img {
             font-size: 48px;
             margin-bottom: 20px;
+        }
+        .logo-img {
+            width: 120px;
+            height: auto;
+            display: inline-block;
         }
         h1 {
             font-size: 42px;
@@ -178,7 +183,7 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">🛡️</div>
+            <img src="logo.png" alt="ClawShield Hawk" class="logo-img">
             <h1>ClawShield</h1>
             <p class="tagline">Security audits for AI agents and autonomous systems</p>
         </header>
